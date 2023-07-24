@@ -15,14 +15,13 @@ book:
   repo-actions: [edit]
   # downloads: [pdf]
   sharing: [twitter, facebook, linkedin]
-  # site-url: "{{< var website_url >}}"
-  repo-url: "{{< var github_url >}}"
+  # repo-url: "{{< var github_url >}}"
+  repo-url: https://github.com/ontoligent/DS5100-2023-07-R
   chapters:
     - part: index.qmd 
       chapters:
         - modules/m00/syllabus.qmd
         - modules/m00/schedule.qmd
-        - topics/oreilly-accounts.qmd
     - part: modules/m01/m01-intro.qmd # "01 Getting Started"
       chapters:
         - topics/rivanna.qmd
@@ -44,23 +43,24 @@ book:
         - notebooks/M02_BasicPython/M02-05-Structures.ipynb
     - part: modules/m03/m03-intro.qmd # "03 Control Structures"
       chapters:
+        - topics/vals-vars-expressions-statements.qmd
         - notebooks/M03_ControlStructures/M03-01-ControlStructures.ipynb
         - notebooks/M03_ControlStructures/M03-02-IterablesAndIterators.ipynb
         - notebooks/M03_ControlStructures/M03-03-Comprehensions.ipynb
     - part: modules/m04/m04-intro.qmd # "04 Functions"
       chapters: 
-        - notebooks/M04_PythonFunctions/M04-01-Importing.ipynb
         - notebooks/M04_PythonFunctions/M04-02-Functions.ipynb
+        - notebooks/M04_PythonFunctions/M04-01-Importing.ipynb
         - notebooks/M04_PythonFunctions/M04-03-LambdaFunctions.ipynb
         - notebooks/M04_PythonFunctions/M04-04-RecursiveFunctions.ipynb
         - notebooks/M04_PythonFunctions/M04-05-Scope.ipynb
         - notebooks/M04_PythonFunctions/M04-06-FunctionsCallingFunctions.ipynb
     - part: modules/m05/m05-intro.qmd # "05 NumPy"
       chapters:
-        - notebooks/M05_NumPy/M05-00-Time.ipynb
-        - notebooks/M05_NumPy/M05-01-BasicFileIO.ipynb
         - notebooks/M05_NumPy/M05-02-NumpyBasics.ipynb
         - notebooks/M05_NumPy/M05-03-NumpyBasicsContinued.ipynb
+        - notebooks/M05_NumPy/M05-00-Time.ipynb
+        - notebooks/M05_NumPy/M05-01-BasicFileIO.ipynb
     - part: modules/m06/m06-intro.qmd # "06 Pandas"
       chapters:
         - notebooks/M06_Pandas/M06-01-Pandas1.ipynb
@@ -107,8 +107,11 @@ book:
         - topics/project-management.qmd
         - topics/agile-dev.qmd
         - topics/user-stories.qmd
-    # - appendices:
-    #   - topics/try-except-finally.qmd
+    - part: "Appendices"
+      chapters: 
+        - topics/oreilly-accounts.qmd
+        - topics/refreshing-the-course-repo.qmd
+  
   sidebar:
     style: docked
     # style: floating
