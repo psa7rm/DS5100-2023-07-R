@@ -30,7 +30,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
-<link href="../../modules/m01/m01-intro.html" rel="next">
+<link href="../../notebooks/M00_FinalProject/FinalProjectTemplate.html" rel="next">
 <link href="../../modules/m00/schedule.html" rel="prev">
 <script src="../../site_libs/quarto-html/quarto.js"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
@@ -143,6 +143,11 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../notebooks/M00_FinalProject/FinalProjectInstructions.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">Final Project</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../notebooks/M00_FinalProject/FinalProjectTemplate.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Final Project Report</span></a>
   </div>
 </li>
       </ul>
@@ -781,8 +786,7 @@ ul.task-list li input[type="checkbox"] {
 <ul>
 <li><p>A jackpot is a result in which all faces are the same, e.g.&nbsp;all ones for a six-sided die.</p></li>
 <li><p>Computes how many times the game resulted in a jackpot.</p></li>
-<li><p>Returns a data frame of results.</p></li>
-<li><p>The data frame should have the roll number as a named index and a column for the jackpot count per roll.</p></li>
+<li><p>Returns an integer for the number of jackpots.</p></li>
 </ul>
 <p><strong>A face counts per roll method.</strong></p>
 <ul>
@@ -833,7 +837,7 @@ ul.task-list li input[type="checkbox"] {
 <li><p>Create a fair coin (with faces <span class="math inline">\(H\)</span> and <span class="math inline">\(T\)</span>) and one unfair coin in which one of the faces has a weight of <span class="math inline">\(5\)</span> and the others <span class="math inline">\(1\)</span>.</p></li>
 <li><p>Play a game of <span class="math inline">\(1000\)</span> flips with two fair dice.</p></li>
 <li><p>Play another game (using a new Game object) of <span class="math inline">\(1000\)</span> flips, this time using two unfair dice and one fair die. For the second unfair die, you can use the same die object twice in the list of dice you pass to the Game object.</p></li>
-<li><p>For each game, use an Analyzer object to determine the relative frequency of jackpots — i.e.&nbsp;getting either all <span class="math inline">\(H\)</span>s or all <span class="math inline">\(T\)</span>s.</p></li>
+<li><p>For each game, use an Analyzer object to determine the raw frequency of jackpots — i.e.&nbsp;getting either all <span class="math inline">\(H\)</span>s or all <span class="math inline">\(T\)</span>s.</p></li>
 <li><p>For each analyzer, compute relative frequency as the number of jackpots over the total number of rolls.</p></li>
 <li><p>Show your results, comparing the two relative frequencies, in a simple bar chart.</p></li>
 </ol>
@@ -847,8 +851,8 @@ ul.task-list li input[type="checkbox"] {
 <li><p>Play a game of <span class="math inline">\(10000\)</span> rolls with <span class="math inline">\(5\)</span> fair dice.</p></li>
 <li><p>Play a game of <span class="math inline">\(10000\)</span> rolls with <span class="math inline">\(2\)</span> unfair dice, one as defined in steps #2 and #3 respectively, and <span class="math inline">\(3\)</span> fair dice.</p></li>
 <li><p>For each game, use an Analyzer object to determine the relative frequency of jackpots and show your results, comparing the two relative frequencies, in a simple bar chart.</p></li>
-<li><p>Also compute <span class="math inline">\(10\)</span> most frequent combinations of faces for each game.</p></li>
-<li><p>Plot each of these combination results as bar charts.</p></li>
+<li><p><del>Also compute</del> <span class="math inline">\(10\)</span> <del>most frequent combinations of faces for each game.</del></p></li>
+<li><p><del>Plot each of these combination results as bar charts.</del></p></li>
 </ol>
 </section>
 <section id="scenario-3-letters-of-the-alphabet" class="level2">
@@ -887,7 +891,7 @@ ul.task-list li input[type="checkbox"] {
 <p>__ A module file named <code>montecarlo.py</code> that contains the above three classes.</p>
 <p>__ Unit tests for each method in each class stored in a file named <code>montecarlo_test.py</code>.</p>
 <p>__ A text file containing the succsessful results of running the previous test file named <code>montecarlo_test_results.txt</code>.</p>
-<p>__ A scenario script that instantiates the classes in a Jupyter notebook called <code>montecarlo_demo.ipynb</code>.</p>
+<p>__ A scenario script that instantiates the classes in a Jupyter notebook called <code>montecarlo_demo.ipynb</code>. NOTE: This file can be the notebook template provided.</p>
 <p>__ <code>docstring</code>s for each class and method (including the initializers).</p>
 <p>__ The appropriate files and directories in a project directory to distribute the above code, including a package subdirectoy called <code>montecarlo</code> with the module file inside of it.</p>
 <p>__ A private GitHub repo called <code>&lt;user_id&gt;_ds5100_montecarlo</code> that contains the package and is shared with the professor and grader.</p>
@@ -1056,8 +1060,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../../modules/m01/m01-intro.html" class="pagination-link">
-        <span class="nav-page-text">M01 Getting Started</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../../notebooks/M00_FinalProject/FinalProjectTemplate.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-title">Final Project Report</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

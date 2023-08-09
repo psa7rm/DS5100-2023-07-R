@@ -23,6 +23,7 @@ book:
         - modules/m00/syllabus.qmd
         - modules/m00/schedule.qmd
         - notebooks/M00_FinalProject/FinalProjectInstructions.qmd
+        - notebooks/M00_FinalProject/FinalProjectTemplate.ipynb
     - part: modules/m01/m01-intro.qmd # "01 Getting Started"
       chapters:
         - topics/rivanna.qmd
@@ -109,6 +110,7 @@ book:
         - topics/project-management.qmd
         - topics/agile-dev.qmd
         - topics/user-stories.qmd
+        # - modules/m13/m13-activity.qmd
     - part: "Appendices"
       chapters: 
         - topics/oreilly-accounts.qmd
